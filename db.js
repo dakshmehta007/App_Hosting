@@ -1,6 +1,8 @@
 
 const mongoose = require('mongoose');
-const mongooseURI = 'mongodb+srv://dakfood:%40dakfood4651@dakfood.rynmzag.mongodb.net/dakfoodmern?retryWrites=true&w=majority';
+require('dotenv').config();
+const MONGODB_URL = process.env.MONGODB_URL;
+const mongooseURI = MONGODB_URL;
 
 const mongoDB = async () => {
     try {
