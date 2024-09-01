@@ -13,14 +13,14 @@ app.use(cors({
 
 mongoDB();
 
-app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin","https://dakfood.netlify.app/");
-    res.header(
-        "Access-Control-Allow-Headers",
-        "Origin,X-Requested-With,Content-Type,Accept"
-    );
-    next();
-})
+// app.use((req,res,next)=>{
+//     res.setHeader("Access-Control-Allow-Origin","https://dakfood.netlify.app/");
+//     res.header(
+//         "Access-Control-Allow-Headers",
+//         "Origin,X-Requested-With,Content-Type,Accept"
+//     );
+//     next();
+// })
 
 app.get('/',(req,res)=>{
     res.send(" Hello world!");
