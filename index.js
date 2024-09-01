@@ -8,7 +8,7 @@ const cors = require('cors');
 
 // Use CORS middleware
 app.use(cors({
-  origin: 'http://localhost:3000' // Replace with your frontend URL
+  origin: 'https://app-hosting-xs1r.onrender.com' // Replace with your frontend URL
 }));
 
 mongoDB();
