@@ -4,6 +4,13 @@ const mongoDB = require('./db')
 require('dotenv').config();
 const port =process.env.PORT;
 
+const cors = require('cors');
+
+// Use CORS middleware
+app.use(cors({
+  origin: 'https://effervescent-rugelach-862f50.netlify.app' // Replace with your frontend URL
+}));
+
 mongoDB();
 
 app.use((req,res,next)=>{
