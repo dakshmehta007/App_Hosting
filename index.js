@@ -8,7 +8,7 @@ const cors = require('cors');
 
 // Use CORS middleware
 app.use(cors({
-  origin: 'https://dakfood.netlify.app/' // Replace with your frontend URL
+  origin: 'https://dakfood.netlify.app' // Replace with your frontend URL
 }));
 
 mongoDB();
