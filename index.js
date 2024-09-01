@@ -8,7 +8,7 @@ const cors = require('cors');
 
 // Use CORS middleware
 app.use(cors({
-  origin: 'https://app-hosting-xs1r.onrender.com' // Replace with your frontend URL
+  origin: 'https://effervescent-rugelach-862f50.netlify.app/' // Replace with your frontend URL
 }));
 
 mongoDB();
