@@ -14,7 +14,7 @@ const port =process.env.PORT;
 mongoDB();
 
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin","https://app-hosting-xs1r.onrender.com");
+    res.setHeader("Access-Control-Allow-Origin","https://dakfood.netlify.app/");
     res.header(
         "Access-Control-Allow-Headers",
         "Origin,X-Requested-With,Content-Type,Accept"
